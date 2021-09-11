@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+
+.audioContainer {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  width: 16%;
+  z-index: 600;
+  filter: brightness(1.2);
+  }
+
+  .email{
+    margin-right: 42vw;
+    font-weight: bolder;
+    color: white;
+    font-size: large;
+    background-color: #010101;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .bottom-right{
+    margin-right: 46vw;
+    color: white;
+    font-size: xx-small;
+  }
+  .logoContainer{
+    max-width: 100vw;
+    max-height: 10vh;
+    background-color: transparent;
+  }
+
+  .foregrd {
+    position: absolute;
+    right: 0%;
+    height:90%;
+    width: 40%;
+    overflow-x: hidden;
+  }
+  
+  .footer{
+    width: 100vw;
+    height: 6vh;
+  }
+  
+  .phonesContainer{
+    position: absolute!important;
+   visibility: hidden;
+   margin: 0;
+   background-size: 0;
+  }
+
+.mouseContainer{
+  visibility: hidden;
+  width: 15%;
+}
+
+  .boardContainer{
+background-image:none!important;
+  }
+
+  .grid{
+    visibility: hidden;
+  }
+  .gridChild{
+    visibility: hidden;
+  }
+  .slide{
+    visibility: hidden;
+  }
+  .intro{
+position: relative;
+height: 50%;
+width: 100%;
+overflow-y: hidden;
+font-size-adjust: inherit;
+  }
+
+  .mailPad{
+    max-width: 14vw;
+    max-height: 3em;
+    margin-top: auto;
+    margin-left: 3vw;
+  }
+
+  .behcPad{
+    max-width: 14vw;
+    max-height: 3em;
+    margin-left: 3vw;
+  }
+
+.prjxPad{
+  max-width: 14vw;
+  max-height: 3em;
+  margin-top: auto;
+  margin-left: 2vw;
+}
+
+.lnkdPad{
+  max-width: 14vw;
+  max-height: 3em;
+  margin-left: 1vw;
+}
+
+.sklzPad{
+  max-width: 14vw;
+  max-height: 3em;
+  margin-top: auto;
+  margin-left: 1vw;
+}
+
+.githPad{
+  max-width: 14vw;
+  max-height: 3em;
+  margin-left: 2vw;
+}
+
+.rsmePad{
+  min-width: 14vw;
+  max-height: 3em;
+}
+
+.faxPad{
+  min-width: 14vw;
+  max-height: 3em;
+  margin-top: auto;
+}
+}
+
+.foregrd {
+  position: absolute;
+  right: 0%;
+       bottom: 0%;
+              vertical-align: bottom;
+              z-index: 100;
+              filter: sepia(30%) brightness(200%) saturate(139%) contrast(98%) invert(5%);
+              -webkit-filter: sepia(30%) brightness(200%) saturate(139%) contrast(98%) invert(5%);
+              -moz-filter: sepia(30%) brightness(200%) saturate(139%) contrast(98%) invert(5%);
+            }
+
+.header{
+  display: flex;
+  flex-direction: column;
+height: 10vh;
+width: 100vw;
+background-color: #010101;
+margin: auto;
+}
+
+.logoContainer{
+margin: auto;
+padding-top: 0.6%;
+}
+
+.audioContainer{
+  margin: auto;
+  padding-top: 0.4%;
+}
+
+.controls{
+  opacity: 0.8;
+  height: 2.4vh;
+  width: 50vw;
+}
+
+.logo{
+  height:6vh;
+  float: left;
+}
+
+.name{
+  float: left;
+  font-size: xxx-large;
+  font-weight: lighter;
+  color: rgb(180, 180, 180);
+  font-family: ds-digital;
+  letter-spacing: 1px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+    background-image: url("../images/daw2.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 82vh;
+    background-color: #010101;
+    }
+    
+    .leftHeroBlank{
+        width: 20%;
+        background:transparent;
+    }
+
+    .rightHeroPic{
+      width: 20%;
+      background:transparent;
+  }
+    
+    .ctrHeroText{
+      width: 60%;
+        background:transparent;
+        display: flex;
+        justify-content: center;
+    }
+     
+    .intro {
+margin: auto;
+padding-top: 7%;
+text-align: center;
+font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        color: whitesmoke;
+        text-align: center;
+        background: transparent;
+      }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        background-image: url("../images/blackwood.jpg");
+        background-size: 100vw;
+      }
+        
+        .phonesContainer{
+            width: 17%;
+            background-image: url("../images/phones.png");
+            background-size: 120%;
+            background-position:right;
+            background-repeat: no-repeat;
+            filter: invert(100%);
+            margin-left: 6%;
+        }
+
+        .mouseContainer{
+          width: 23%;
+      }
+
+        .boardContainer {
+            width: 60%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+            grid-template-rows: 4% 40% 40% 0%;
+            gap: 5% 1.5%;
+            grid-auto-flow: row;
+            grid-template-areas:
+              ". . . . . ."
+              "buffer faxPad sklzPad prjxPad mailPad volFader"
+              "buffer rsmePad lnkdPad githPad behcPad volFader"
+              ". . . . . .";
+
+          }
+          
+          .volFader { grid-area: volFader; 
+        }
+          
+        .mailPad { grid-area: mailPad;            
+          box-shadow: 0px 1px 2px 2px #EC4915;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%; }
+        
+        .behcPad { grid-area: behcPad;
+          box-shadow: 0px 1px 2px 2px #FCFF55;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%; }
+        
+        .prjxPad { grid-area: prjxPad;
+          box-shadow: 0px 1px 2px 2px #14EC11;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%; }
+        
+        .lnkdPad { grid-area: lnkdPad; 
+          box-shadow: 0px 1px 2px 2px #0600FF;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%;}
+        
+        .sklzPad { grid-area: sklzPad; 
+          box-shadow: 0px 1px 2px 2px #00FFE1;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%;}
+        
+        .githPad { grid-area: githPad;
+          box-shadow: 0px 1px 2px 2px #BD00FF;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%; }
+        
+        .rsmePad { grid-area: rsmePad;
+          box-shadow: 0px 1px 2px 2px #FF0035;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%; }
+        
+        .faxPad { grid-area: faxPad; 
+          box-shadow: 0px 1px 2px 2px #FF00C7;
+          background-image: url("../images/blankPad.png"); 
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          font-family: ds-digital;
+          font-size: large;
+          font-weight: bold;
+          color:#c4c4c4;
+          padding-left: 3%;}
+        
+        .buffer { grid-area: buffer; }
+    
+        a:hover {
+          color: whitesmoke; 
+          text-decoration:none;  
+          font-size: x-large;
+      }    
+
+      .email {
+        position: absolute;
+        bottom: 3%;
+        right: 1%;
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: large;
+        letter-spacing: 0.5px;
+        color: #f5f5f5;
+        text-align: right;
+        z-index: 200;
+      }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 1% !important;
+            right: 1% !important;
+            font-family: monospace;
+            font-weight: lighter;
+            font-size: x-small;
+            letter-spacing: 1px;
+            color: #f5f5f5;
+            text-align: right;
+            z-index: 200;
+          }
+
+  .grid {
+    position: absolute;
+    display: grid;
+    right: 40%;
+    bottom: 36%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "arrow preload";
+  }
+
+  .gridChild {
+    height: 0px;
+  }
+
+  .preload {
+    grid-area: preload;
+    text-align: center;
+  }
+  .slide {
+    animation: slideArrow 2.8s infinite;
+  }
+ @keyframes slideArrow {
+    from {
+      margin-right: -7vh;
+    }
+    50% 
+    {
+      margin-right: 50vh;
+    }
+    to {
+      margin-right: -7vh;
+    }
+  }
